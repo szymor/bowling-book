@@ -2,7 +2,6 @@
 #include "ui_datechoicewindow.h"
 #include <QTextCharFormat>
 #include <QMessageBox>
-#include <windows.h>
 
 DateChoiceWindow::DateChoiceWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -18,21 +17,6 @@ DateChoiceWindow::DateChoiceWindow(QWidget *parent) :
 
     this->on_calendarWidget_selectionChanged();
     tempEntry = NULL;
-
-
-    DWORD vsn;
-    GetVolumeInformationA(NULL,NULL,0,&vsn,NULL,NULL,NULL,0);
-    // 0xBCEA4948 - moj pendrive
-    // 0x18c4c1a1 - dysk C kregielnia
-/*
-    if(vsn != 0x18c4c1a1)
-    {
-        QMessageBox qmb;
-        qmb.setText("Nie kradnij!");
-        qmb.exec();
-        exit(0);
-    }
-*/
 }
 
 DateChoiceWindow::~DateChoiceWindow()
@@ -223,5 +207,6 @@ void DateChoiceWindow::on_bPaste_clicked()
 
 void DateChoiceWindow::on_tableWidget_itemDoubleClicked(QTableWidgetItem *item)
 {
+    (void)item;
     on_bBook_clicked();
 }
