@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DateChoiceWindow</class>
+ <widget class="QMainWindow" name="DateChoiceWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>828</width>
+    <height>559</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>828</width>
+    <height>559</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Bowling</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="gridVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bExit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wyjście</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bBlackList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Czarna lista</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDelete">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kasuj zaznaczone</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDeleteAndBlacklist">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kasuj i dodaj
+na czarną listę</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bBook">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rezerwuj</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>551</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="rowCount">
+     <number>17</number>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <row>
+     <property name="text">
+      <string>10-11</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>11-12</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>12-13</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>13-14</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>14-15</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>15-16</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>16-17</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>17-18</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>18-19</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>19-20</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>20-21</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>21-22</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>22-23</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>23-24</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>00-01</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>01-02</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>02-03</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Tor I</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tor II</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tor III</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tor IV</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bilard</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="bCopy">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>320</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kopiuj</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bPaste">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wklej</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bClear">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>360</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Czyść</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lPasteboard">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>300</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Schowek:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lFirstName">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>390</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>---</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lLastName">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>410</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>---</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lPhone">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>430</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>---</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lReserved">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zarezerwowanych godzin: ---</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lUnpaid">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>w tym --- nieopłaconych</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bExit</sender>
+   <signal>clicked()</signal>
+   <receiver>DateChoiceWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>454</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
